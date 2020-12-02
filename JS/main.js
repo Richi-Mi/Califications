@@ -1,12 +1,15 @@
 //Variables
+const TableMaterias = document.getElementById('materias')
+const TableCalificaciones = document.getElementById('input_calificaciones')
 const form = document.getElementById('form')
+const btn_promedio = document.getElementById('promedio')
 const input = form.children[1]
 const submit = form.children[2]
 const materias = form.children[3]
 
 //Events
 submit.addEventListener('click', (event) => {
-    const Calificacion = new Califications('Jose Ricardo')
+    const Calificacion = new Califications('Jose Ricardo Mendoza Castañeda')
 
     const value = input.value
     event.preventDefault()
@@ -17,5 +20,9 @@ submit.addEventListener('click', (event) => {
         e.preventDefault()
         const namesMaterias = Calificacion.getData(value)
         Calificacion.setMaterias(namesMaterias)
+        Calificacion.setTableMaterias(TableMaterias)
     })
+})
+btn_promedio.addEventListener('click', () => {
+    console.log('Jalouda')
 })

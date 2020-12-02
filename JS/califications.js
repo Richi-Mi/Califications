@@ -36,4 +36,26 @@ class Califications{
     setMaterias(array) {
         this.materias = array
     }
+    setTableMaterias(table) {
+        const materias = this.materias
+        let i = 1
+        for(let materia of materias) {
+            const fragment = document.createDocumentFragment()
+            const div = document.createElement('div')
+            const p = document.createElement('p')
+            const input = document.createElement('input')
+
+            input.classList.add('input-calificacion')
+            input.setAttribute('type', 'number')
+            input.setAttribute('id', `promedio-${i}`)
+
+            p.textContent = materia
+
+            div.appendChild(p)
+            div.appendChild(input)
+            fragment.appendChild(div)
+            table.appendChild(fragment)
+            i++
+        }
+    }
 }

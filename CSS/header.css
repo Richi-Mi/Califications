@@ -1,0 +1,24 @@
+/*_________________________ Header _____________________-*/
+.header{
+    width: 100%;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    font-family: 'Padauk', sans-serif;
+    font-size: 2.8em;
+    letter-spacing: 2px;
+}
+.linea {
+    height: 1em;
+    background: linear-gradient(to right, #999, rgb(136, 55, 55));
+}
+.img{
+    width: 8em;
+    height: 10em;
+}
+.img img {
+    max-width: 100%;
+}

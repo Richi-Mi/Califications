@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Jose Ricardo Mendoza Castañeda">
-    <meta name="description" content="Esta pagina web esta creada, para tener un control de las calificaciones, seas de la escuela que seas y e el nivel que vallas">    
+    <meta name="description"
+        content="Esta pagina web esta creada, para tener un control de las calificaciones, seas de la escuela que seas y e el nivel que vallas">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
     <title> Control de Calificaciones </title>
+    <!-- Scripts -->
     <script src="JS/califications.js"></script>
     <script src="JS/button.js"></script>
+    <!-- Styles -->
+    <link rel="shortcut icon" href="img/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/form.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/header.css">
 </head>
+
 <body>
     <main class="main">
-        <h1 class="title"> CONTROL DE CALIFICACIONES </h1>
+        <header class="header">
+            <div class="head">
+                <h1 class="title"> CONTROL DE CALIFICACIONES </h1>
+                <div class="img">
+                    <img src="img/IPN-icon.jpg" alt="IPN">
+                </div>
+            </div>
+            <div class="linea"></div>
+        </header>
         <!-- Formulario para obtener datos -->
         <form id="form">
 
             <label for="num_materias"> ¿Cuantas Materias tienes? </label>
             <input type="number" name="num_materias" id="numM">
-           
+
             <input type="submit" value="Aceptar" id="submit">
 
             <div class="name_materias" id="names">
@@ -37,4 +56,5 @@
 
     <script src="JS/main.js"></script>
 </body>
+
 </html>

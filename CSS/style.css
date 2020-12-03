@@ -2,9 +2,14 @@ body {
     margin: 0;
     background-color: rgb(204, 204, 204);
     box-sizing: border-box;
+    font-size: 10px;
 }
 .main{
     width: 90%;
     margin: 0 auto;
     background-color: #fff;
+    padding: 1.5em;
+    min-height: 100vh;
+    box-sizing: border-box;
+    box-shadow: 2px 7px 35px 0px rgba(0,0,0,0.75);
 }

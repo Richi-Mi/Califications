@@ -3,6 +3,7 @@ const TableMaterias = document.getElementById('materias')
 const TableCalificaciones = document.getElementById('input_calificaciones')
 const form = document.getElementById('form')
 const btn_promedio = document.getElementById('promedio')
+const final = document.getElementById('final')
 const input = form.children[1]
 const submit = form.children[2]
 const materias = form.children[3]
@@ -25,6 +26,7 @@ submit.addEventListener('click', (event) => {
 
     btn_promedio.addEventListener('click', () => {
         const inputs = getInputs(value)
-        console.log(inputs)
+        const PromedioFinal = Calificacion.getCalification(inputs)
+        final.textContent = PromedioFinal
     })
 })

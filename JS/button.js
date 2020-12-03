@@ -6,7 +6,7 @@ const getInputs = (value) => {
     const inputs = []
     for(let i = 1; i <= value; i++) {
         const input = document.getElementById(`promedio-${i}`)
-        inputs.push(input.value)
+        inputs.push(parseInt(input.value))
     }
     return inputs
 }

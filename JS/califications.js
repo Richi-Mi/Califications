@@ -58,7 +58,13 @@ class Califications{
             i++
         }
     }
-    getCalifications() {
-        
+    getCalification(array) {
+        const divisor = array.length 
+        let totalDeTodo = 0
+        for(const calificacion of array) {
+            totalDeTodo = totalDeTodo +  calificacion
+        }
+        const promedio = totalDeTodo / divisor
+        return promedio
     }
 }

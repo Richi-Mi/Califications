@@ -33,17 +33,20 @@
             <div class="linea"></div>
         </header>
         <!-- Formulario para obtener datos -->
-        <form id="form">
-
-            <label for="num_materias"> ¿Cuantas Materias tienes? </label>
-            <input type="number" name="num_materias" id="numM">
-
-            <input type="submit" value="Aceptar" id="submit">
-
-            <div class="name_materias" id="names">
-            </div>
-
-        </form>
+        <div class="formulario" id="formulario">
+            <h2 class="title-form"> Llena los espacios para continuar </h2>
+            <form id="form" class="form">
+    
+                <label for="num_materias"> ¿Cuantas Materias tienes? </label>
+                <input type="number" name="num_materias" id="numM" class="input">
+    
+                <button id="submit"> Aceptar </button> 
+    
+                <div class="name_materias" id="names">
+                </div>
+    
+            </form>
+        </div>
         <!-- Tabla de Materias y Calificaciones -->
         <div class="calificaciones" id="calificaciones">
             <div class="materias" id="materias"></div>

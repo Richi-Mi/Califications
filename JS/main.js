@@ -22,7 +22,9 @@ submit.addEventListener('click', (event) => {
         Calificacion.setMaterias(namesMaterias)
         Calificacion.setTableMaterias(TableMaterias)
     })
-})
-btn_promedio.addEventListener('click', () => {
-    console.log('Jalouda')
+
+    btn_promedio.addEventListener('click', () => {
+        const inputs = getInputs(value)
+        console.log(inputs)
+    })
 })

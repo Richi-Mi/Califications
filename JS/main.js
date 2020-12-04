@@ -4,16 +4,19 @@ const TableCalificaciones = document.getElementById('input_calificaciones')
 const form = document.getElementById('form')
 const btn_promedio = document.getElementById('promedio')
 const final = document.getElementById('final')
-const input = form.children[1]
-const submit = form.children[2]
-const materias = form.children[3]
+const input = form.children[0].children[1]
+const submit = document.getElementById('submit')
+const materias = form.children[2]
+const name = document.getElementById('name')
+const formulario = document.getElementById('formulario')
 
 //Events
 submit.addEventListener('click', (event) => {
-    const Calificacion = new Califications('Jose Ricardo Mendoza Castañeda')
+    event.preventDefault()
+    const nombre = name.value
+    const Calificacion = new Califications(nombre)
 
     const value = input.value
-    event.preventDefault()
     Calificacion.createCuest(value, materias)
     
     const btn_finished = getButton()

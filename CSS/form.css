@@ -1,3 +1,36 @@
-.form {
+.formulario {
+    width: 96%;
+    margin: .7em auto;
+    border-radius: 1em;
     padding: 1em;
+    background-color: #f9f9f9;
+    transition: 3s clip-path ease, 1s background-color ease;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) 
+}
+.active-finished {
+    background-color: rgb(5, 255, 5);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0)
+}
+.title-form {
+    text-align: center;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1em .5em;
+    border-bottom: 3px solid #090909;
+}
+/*_________ INPUTS ____________-*/
+.cuestion {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.7em auto;
+}
+.label {
+    font-family: 'Padauk', sans-serif;
+    font-size: 1.6em;
+}
+.input {
+    width: 40%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #f00;
 }

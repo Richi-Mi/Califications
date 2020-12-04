@@ -6,15 +6,20 @@ class Califications{
     
         for(let i = 1; i <= num; i++) {
             const fragment = document.createDocumentFragment()
+
+            const label = document.createElement('label')
+            label.setAttribute('for', 'materia')
+            label.classList.add('label')
+            label.textContent = `¿Cual es el nombre de la ${i} materia?`
     
             const div = document.createElement('div')
-            div.classList.add('materia')
-            div.textContent = '¿Cual es el nombre de la materia?'
+            div.classList.add('cuestion')
     
             const input = document.createElement('input')
-            input.classList.add('input_materias')
+            input.classList.add('input')
             input.setAttribute('id', `materia${i}`)
     
+            div.appendChild(label)
             div.appendChild(input)
             fragment.appendChild(div)
             materias.appendChild(fragment)

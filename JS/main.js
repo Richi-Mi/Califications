@@ -37,7 +37,7 @@ submit.addEventListener('click', (event) => {
     btn_promedio.addEventListener('click', () => {
         const inputs = getInputs(value)
         const PromedioFinal = Calificacion.getCalification(inputs)
-        final.textContent = PromedioFinal
+        final.textContent = `Tu calificacion final es ${PromedioFinal}`
     })
     submit.remove()
 })

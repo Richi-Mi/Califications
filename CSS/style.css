@@ -13,3 +13,11 @@ body {
     box-sizing: border-box;
     box-shadow: 2px 7px 35px 0px rgba(0,0,0,0.75);
 }
+@media screen and (max-width: 440px) {
+    body {
+        font-size: 7px;
+    }
+    .main {
+        width: 96%;
+    }
+}

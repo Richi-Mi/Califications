@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="CSS/form.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/calificaciones.css">
 </head>
 
 <body>
@@ -35,7 +36,7 @@
         <!-- Formulario para obtener datos -->
         <div class="formulario" id="formulario">
             <h2 class="title-form"> Llena los espacios para continuar </h2>
-            <div id="name" class="cuestion">
+            <div id="nombre" class="cuestion">
                 <label for="name" class="label"> ¿Cual es tu nombre? </label>
                 <input type="text" name="name" id="name" class="input">
             </div>
@@ -46,7 +47,9 @@
                   <input type="number" name="num_materias" id="numM" class="input">
                </div>
     
-                <button id="submit"> Aceptar </button> 
+                <div class="contenedor-btn">
+                    <button id="submit" class="btn"> Aceptar </button>
+                </div> 
     
                 <div class="name_materias" id="names">
                 </div>
@@ -55,9 +58,10 @@
         </div>
         <!-- Tabla de Materias y Calificaciones -->
         <div class="calificaciones" id="calificaciones">
+            <h2 class="title" id="titulo"></h2>
             <div class="materias" id="materias"></div>
             <div class="calificaciones" id="input_calificaciones"></div>
-            <button class="btn" id="promedio"> Sacar Promedio </button>
+            <button class="btn hidden btn-p" id="promedio"> Sacar Promedio </button>
             <p class="resultado" id="final"></p>
         </div>
 

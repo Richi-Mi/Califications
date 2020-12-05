@@ -1,0 +1,21 @@
+.hidden {
+    display: none;
+}
+.btn-p{
+    width: 100%;
+}
+.materiadiv {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    border-bottom: 2px solid rgb(207, 78, 78);
+}
+.input-calificacion{
+    width: 40%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(207, 78, 78);
+}
+.label {
+    font-size: 2em;
+}

@@ -2,6 +2,12 @@ class Califications{
     constructor(name){
         this.name = name
     }
+    setNameTitle() {
+        const title = document.getElementById('titulo')
+        title.textContent = `Calificaciones de ${this.name}`
+        title.classList.remove('hidden')
+        console.log(Califications)
+    }
     createCuest = (num, materias) => {
     
         for(let i = 1; i <= num; i++) {
@@ -24,11 +30,15 @@ class Califications{
             fragment.appendChild(div)
             materias.appendChild(fragment)
         }
+        const div_btn = document.createElement('div')
+        div_btn.classList.add('contenedor-btn')
+
         const button = document.createElement('button')
         button.setAttribute('id', `button_calificaciones`)
-        button.classList.add('button')
+        button.classList.add('btn')
         button.textContent = 'Aceptar'
-        materias.appendChild(button)
+        div_btn.appendChild(button)
+        materias.appendChild(div_btn)
     }
     getData(valor){
         const names = []
@@ -47,13 +57,16 @@ class Califications{
         for(let materia of materias) {
             const fragment = document.createDocumentFragment()
             const div = document.createElement('div')
-            const p = document.createElement('p')
+            div.classList.add('materiadiv')
+            const p = document.createElement('label')
             const input = document.createElement('input')
 
             input.classList.add('input-calificacion')
             input.setAttribute('type', 'number')
+            input.setAttribute('placeholder', 'Escriba su Calificacion Aqui')
             input.setAttribute('id', `promedio-${i}`)
 
+            p.classList.add('label')
             p.textContent = materia
 
             div.appendChild(p)

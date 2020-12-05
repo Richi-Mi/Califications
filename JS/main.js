@@ -14,6 +14,7 @@ const formulario = document.getElementById('formulario')
 submit.addEventListener('click', (event) => {
     event.preventDefault()
     const nombre = name.value
+    console.log(name)
     const Calificacion = new Califications(nombre)
 
     const value = input.value
@@ -22,9 +23,15 @@ submit.addEventListener('click', (event) => {
     const btn_finished = getButton()
     btn_finished.addEventListener('click', (e) => {
         e.preventDefault()
+        Calificacion.setNameTitle()
+        formulario.classList.add('active-finished')
         const namesMaterias = Calificacion.getData(value)
         Calificacion.setMaterias(namesMaterias)
         Calificacion.setTableMaterias(TableMaterias)
+        setTimeout(() => {
+            formulario.remove()//OKEY
+        }, 3000)
+        btn_promedio.classList.remove('hidden')
     })
 
     btn_promedio.addEventListener('click', () => {
@@ -32,4 +39,5 @@ submit.addEventListener('click', (event) => {
         const PromedioFinal = Calificacion.getCalification(inputs)
         final.textContent = PromedioFinal
     })
+    submit.remove()
 })

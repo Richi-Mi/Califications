@@ -8,7 +8,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) 
 }
 .active-finished {
-    background-color: rgb(5, 255, 5);
+    background-color: rgb(162, 235, 162);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0)
 }
 .title-form {
@@ -32,5 +32,30 @@
     width: 40%;
     border: none;
     outline: none;
-    border-bottom: 2px solid #f00;
+    border-bottom: 2px solid rgb(187, 62, 62);
+    transition: .5s box-shadow ease-in;
+}
+.input:focus {
+    border-bottom: 2px solid rgb(224, 77, 77);
+    box-shadow: 2px 4px 10px -2px rgb(219, 94, 94);
+}
+/*___________ Button ______---*/
+.contenedor-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    width: 50%;
+    border: none;
+    outline: none;
+    padding: .5em .1em;
+    border-radius: .5em;
+    background-color: rgb(204, 80, 80);
+    transition: .2s background-color ease-in-out, .3s transform ease;
+    color: #fff;
+}
+.btn:active {
+    background-color: rgb(212, 55, 55);
+    transform: scale(.75);
 }
